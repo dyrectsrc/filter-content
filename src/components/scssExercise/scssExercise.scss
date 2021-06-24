@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:300,400";
+
+$orange: #ff6c00;
+$gray: #f9f8f7;
+$blue: #00a3e2;
+
+.exercise-header {
+  text-align: center;
+}
+.wrapper {
+  padding: 25px;
+  background: $gray;
+  .quote-wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 5%;
+    .quote-line {
+      border-left: 2px solid $orange;
+      margin-left: 20px;
+      padding: 0 20px 0px 20px;
+      position: relative;
+      p {
+        font-family: Roboto;
+        margin-bottom: 30px;
+      }
+      span {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: $orange;
+        height: 7px;
+        width: 7px;
+        position: absolute;
+        border-radius: 30px;
+        left: -4px;
+        bottom: 0;
+      }
+      &::before {
+        content: open-quote;
+        background: $orange;
+        display: block;
+        height: 24px;
+        font-size: 30px;
+        width: 24px;
+        color: #ffffff;
+        text-align: center;
+        font-family: Roboto;
+        position: absolute;
+        border-radius: 30px;
+        left: -13px;
+      }
+    }
+    a {
+      width: 130px;
+      height: 30px;
+      background: $blue;
+      margin-top: 50px;
+      padding: 12px 0 0 0;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+  }
+}

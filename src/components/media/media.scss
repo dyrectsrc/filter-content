@@ -1,0 +1,26 @@
+.media-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-top: 2px solid #eee;
+  grid-gap: 30px;
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  .media-item {
+    list-style: none;
+    p {
+      &.title-year {
+        margin: 5px 0 0 0;
+        font-weight: bold;
+        color: #777;
+      }
+      &.genres {
+        margin: 5px 0 0 0;
+        font-weight: bold;
+        color: #777;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
