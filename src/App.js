@@ -39,8 +39,7 @@ media.map((item) => {
   }
 });
 
-//Todo: Refactor code to make it more DRY
-//Make 3 seperate arrays for years, genres and all
+//Make 3 seperate arrays for years, genres and all, with no duplicates
 genreArrMovie = [...new Set(genreArrMovie)];
 genreArrBook = [...new Set(genreArrBook)];
 allGenres = [...new Set([...genreArrMovie, ...genreArrBook])];
@@ -48,7 +47,8 @@ yearArrMovie = [...new Set(yearArrMovie)];
 yearArrBook = [...new Set(yearArrBook)];
 allYears = [...new Set([...yearArrMovie, ...yearArrBook])];
 
-//create object from each item in array and add selected property to use for filtering
+//Create object from each item in array and add selected property to use for filtering
+//Todo: Refactor code to make it more DRY
 genreArrMovie.forEach((genre) => {
   genreMovieObjs.push({ genre: genre, selected: false });
 });
