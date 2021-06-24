@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import media from "./data";
 import "./App.scss";
 import Media from "./components/media/media";
@@ -7,7 +6,6 @@ import YearDropdown from "./components/yearDropdown/yearDropdown";
 import Searchbox from "./components/searchbox/searchbox";
 import ScssProject from "./components/scssExercise/scssExercise";
 import { useState, usePrevious, useEffect } from "react";
-import { renderIntoDocument } from "react-dom/cjs/react-dom-test-utils.development";
 
 let genreArrBook = [];
 let genreArrMovie = [];
